@@ -1,0 +1,97 @@
+/*
+Theme Name: (Your theme name here)
+Theme URI: (Your theme url)
+Author: (Your name)
+Author URI: (Your page url)
+Description: (Your description)
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: tags, if, for, searching, on, wordpress, if, you, launch, it
+Text Domain: (unique name for your theme, for separation. also used for transalation file)
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+.site-main {
+	width: 90%;
+	max-width: 800px;
+	margin: 0 auto;
+}
+.sidebar {
+	padding: 20px;
+	list-style: none;
+	z-index: 1;
+	text-align: right;
+	height:105px;
+}
+.sidebar h2 {
+	display: none;
+}
+.main-image-banner {
+	background-image: url("img/paul-octavious-1920x1200.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	padding: 8%;
+}
+.main-image-text {
+	width: 50%;
+	max-width: 400px;
+	color: #000;
+	border-radius: 10px;
+}
+.main-image-text h1 {
+	font-size: 40px;
+	opacity: 1;
+}
+.main-image-text p {
+	font-size: 16px;
+	opacity: 1;
+}
+.main-image-banner img {
+	width: 100%;
+	z-index: -1;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.btn {
+	padding: 10px;
+	background-color: pink;
+}
+div aside {
+	display: inline;
+}
+.entry-title {
+	font-size: 50px;
+}
+.menu {
+	list-style: none;
+}
+.menu>li {
+	display: inline;
+}
+.site-footer {
+	/*width: 100%;*/
+	background-color: #ddd;
+	padding: 20px;
+	margin-top: 30px;
+}
+@media screen and (max-width:700px) {
+    .main-image-text {
+        width: 90%;
+        max-width: 100%;
+    }
+    .main-image-text h1 {
+	font-size: 30px;
+	opacity: 1;
+	}
+	.main-image-text p {
+	font-size: 14px;
+	opacity: 1;
+	}
+}
+.main-logo {
+	float: left;
+}
