@@ -18,65 +18,37 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<div id="main-image-banner" class="main-image-banner">
-			<div class="main-image-text">
-				<h1>Title of My Site</h1>
-				<p>
+			<div class="main-image-text group">
+				<h1 class="main-image-text-element">Title of My Site</h1>
+				<p class="main-image-text-element">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. 
 				</p>
 			</div>
-			<a id="main-image-button" class="btn">Read More</a>
 			<!-- <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/paul-octavious-1920x1200.jpg"/> -->
 		</div>
-		<main id="main" class="site-main" role="main">
+		<div class="color-line grey"></div>
+		<div class="texture-line"></div>
+		<main id="main" class="site-main group" role="main">
 
-		<?php if ( have_posts() ) : ?>
-
-			<?php if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-			<?php endif; ?>
-
-			<?php
-			// Start the loop.
-			while ( have_posts() ) : the_post(); ?>
-
-				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-					<?php
-						// Post thumbnail.
-						the_post_thumbnail();
-					?>
-
-					<header class="entry-header">
-						<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-					</header><!-- .entry-header -->
-
-					<div class="entry-content">
-						<?php the_content(); ?>
-					</div><!-- .entry-content -->
-
-					<?php edit_post_link( __( 'Edit', 'twentyfifteen' ), '<footer class="entry-footer"><span class="edit-link">', '</span></footer><!-- .entry-footer -->' ); ?>
-
-				</article><!-- #post-## -->
-
-			<?php
-			// End the loop.
-			endwhile;
-
-			// Previous/next page navigation.
-			the_posts_pagination( array(
-				'prev_text'          => __( 'Previous page', 'twentyfifteen' ),
-				'next_text'          => __( 'Next page', 'twentyfifteen' ),
-				'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentyfifteen' ) . ' </span>',
-			) );
-
-		// If no content, include the "No posts found" template.
-		else : ?>
-
-			<p>No posts found</p>
-
-		<?php endif; ?>
+		<div class="main-box">
+			<div class="circle"></div>
+			<h2>Box Title</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt. </p>
+		</div>
+		<div class="main-box">
+			<div class="circle"></div>
+			<h2>Box Title</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt. </p>
+		</div>
+		<div class="main-box">
+			<div class="circle"></div>
+			<h2>Box Title</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt. </p>
+		</div>
 
 		</main><!-- .site-main -->
 	</div><!-- .content-area -->
