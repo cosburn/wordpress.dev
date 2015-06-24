@@ -19,6 +19,8 @@
 	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/html5.js"></script>
 	<![endif]-->
 	<link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/normalize.css ">
+	<!-- <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/grid.css "> -->
+	<link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/box_sizing.css ">
 	<?php wp_head(); ?>
 </head>
 
@@ -28,5 +30,6 @@
 	<div id="sidebar" class="sidebar">
 		<?php get_sidebar(); ?>
 	</div><!-- .sidebar -->
+	<div id="top-texture-line" class="texture-line"></div>
 
 	<div id="content" class="site-content">
